@@ -45,10 +45,6 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := 560dpi
 PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
-# Atrace
-PRODUCT_PACKAGES += \
-    android.hardware.atrace@1.0-service.pixel
-
 # Apex
 OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
@@ -182,15 +178,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     vendor.qti.hardware.camera.device@1.0.vendor
 
-# Context Hub
-PRODUCT_PACKAGES += \
-   android.hardware.contexthub-service.generic
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4 \
     android.hardware.drm@1.4.vendor \
-    android.hardware.drm@1.4-service.clearkey
 
 # Optimize everything for preopt
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
@@ -558,17 +549,12 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service \
     android.hardware.usb.gadget@1.0
 
-# Vendor libstdc++
-PRODUCT_PACKAGES += \
-    libstdc++.vendor
-
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.3-service.lge
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
